@@ -59,20 +59,22 @@ export default function Home() {
                     <input
                       name="firstname"
                       type="text"
-                      className="form-control"
+                      className="form-control shadow-sm"
                       placeholder="Title.."
                       aria-label="Username"
                       onChange={setFormData}
+                      autocomplete="off"
                     />
                   </h5>
                   <p class="card-text">
                     <input
                       name="lastname"
                       type="text"
-                      className="form-control"
+                      className="form-control shadow-sm"
                       placeholder="Content.."
                       aria-label="Username"
                       onChange={setFormData}
+                      autocomplete="off"
                     />
                   </p>
                   <button
