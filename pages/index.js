@@ -77,7 +77,7 @@ export default function Home() {
                   </p>
                   <button
                     type="button"
-                    className="btn btn-outline-dark shadow-sm rounded-pill"
+                    className="btn btn-dark shadow-sm rounded-pill"
                     onClick={handleSubmit}
                   >
                     -create-
