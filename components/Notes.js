@@ -1,10 +1,19 @@
 import { getUsers } from "../lib/helper";
 import { useQuery } from "react-query";
+import Loading from "./Loading";
+import Error from "./Error";
 
 export default function Notes() {
   const { isLoading, isError, data, error } = useQuery("cheatsheet", getUsers);
-  if (isLoading) return <div>Messages are loading..</div>;
-  if (isError) return <div>Got an Error</div>;
+  if (isLoading)
+    return (
+      <div className="container fs-3">
+        <Loading />
+        ...there are many notes and the database I am using is slow so have
+        patience.
+      </div>
+    );
+  if (isError) return <Error />;
 
   return (
     <>
