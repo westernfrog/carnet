@@ -17,7 +17,7 @@ export default function Notes() {
 
   return (
     <>
-      <div class="container px-0 text-dm">
+      <div class="container text-dm">
         <div class="row">
           {data.map((obj, i) => (
             <Note {...obj} key={i} />
