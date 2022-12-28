@@ -51,9 +51,7 @@ export default function Home() {
           <div class="col-md-5">
             <form onSubmit={handleSubmit}>
               <div class="card text-dm">
-                <div class="card-header">
-                  <mark>CREATE </mark> to create a new note!
-                </div>
+                <div class="card-header">CREATE to create a new note!</div>
                 <div class="card-body">
                   <h5 class="card-title">
                     <input
