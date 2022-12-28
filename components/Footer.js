@@ -4,7 +4,7 @@ cdate = cdate.getFullYear();
 export default function Footer() {
   return (
     <>
-      <footer className="d-flex flex-wrap justify-content-between align-items-center my-3 pt-4 border-top container">
+      <footer className="d-flex flex-wrap justify-content-between align-items-center mb-3 pt-4 mt-5 border-top container">
         <p className="col-md-4 mb-0 text-dm">&copy; {cdate} Cheatsheet, Inc</p>
         <span>
           <a
