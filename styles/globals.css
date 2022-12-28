@@ -7,3 +7,6 @@
 .text-roboto {
   font-family: "Roboto", serif;
 }
+* {
+  overflow: hidden;
+}

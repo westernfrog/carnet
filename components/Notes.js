@@ -29,7 +29,7 @@ export default function Notes() {
 }
 function Note({ firstname, lastname }) {
   return (
-    <div class="col-md-3">
+    <div class="col-md-3 mx-auto">
       <div class="card mt-3 shadow-sm" style={{ width: "18rem" }}>
         <div class="card-body">
           <h5 class="card-title">{firstname || "Title"}</h5>
