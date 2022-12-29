@@ -33,7 +33,7 @@ export default function Form(params) {
   if (addMutation.isSuccess) location.reload();
   return (
     <>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4 ">
         <form onSubmit={handleSubmit}>
           <div class="card text-dm border-2">
             <div class="card-header">
@@ -50,6 +50,7 @@ export default function Form(params) {
                   aria-label="Username"
                   onChange={setFormData}
                   autoComplete="off"
+                  autoFocus
                 />
               </h5>
               <p class="card-text">
