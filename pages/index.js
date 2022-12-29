@@ -10,9 +10,7 @@ export default function Home() {
       <Header />
       <div className="container my-5">
         <div class="row">
-          <div class="col-md-4">
-            <Form />
-          </div>
+          <Form />
           <Weather />
         </div>
       </div>
