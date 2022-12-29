@@ -1,7 +1,7 @@
 export default function Weather() {
   return (
     <>
-      <div className="col-md-8">
+      <div className="col-md-8 mb-4">
         <div class="card border-dark shadow">
           <div class="card-header shadow-sm">
             <div className="row">

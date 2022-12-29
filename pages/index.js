@@ -10,11 +10,10 @@ export default function Home() {
       <Header />
       <div className="container my-5">
         <div class="row">
-          <Form />
           <Weather />
+          <Form />
         </div>
       </div>
-
       <Notes />
       <Footer />
     </>
