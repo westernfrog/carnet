@@ -19,42 +19,46 @@ export default function Weather() {
             </div>
           </div>
           <div class="card-body text-dark">
-            <h6 class="card-title text-dm mb-0 pb-1">
-              <div>Current weather for 📍 Ranchi, India.</div>
-            </h6>
+            <h5 class="card-title text-dm mb-0 pb-3 text-center fw-bold">
+              <div>Ranchi, India 📍</div>
+            </h5>
 
             <div class="row text-center">
               <div className="col-md-4">
                 <div class="card border-0">
-                  <div class="card-header bg-white text-slab">13&deg; C</div>
+                  <div class="card-header bg-white text-mono fw-bold">
+                    13&deg; C
+                  </div>
                   <div class="card-body text-dark">
                     <h2 class="card-title my-0">☁️</h2>
                   </div>
-                  <div class="card-footer text-dm bg-transparent pb-0">
+                  <div class="card-footer text-mono fw-bold bg-transparent py-2">
                     Today
                   </div>
                 </div>
               </div>
               <div className="col-md-4 d-none d-lg-block">
                 <div class="card border-0">
-                  <div class="card-header bg-white text-slab">11&deg; C</div>
+                  <div class="card-header bg-white text-mono fw-bold">
+                    11&deg; C
+                  </div>
                   <div class="card-body text-dark">
                     <h2 class="card-title my-0">⛅</h2>
                   </div>
-                  <div class="card-footer text-dm bg-transparent pb-0">
+                  <div class="card-footer text-mono fw-bold bg-transparent  py-2">
                     Tomorrow
                   </div>
                 </div>
               </div>
               <div className="col-md-4 d-none d-lg-block">
                 <div class="card border-0">
-                  <div class="card-header bg-white bg-white text-slab">
+                  <div class="card-header bg-white bg-white text-mono fw-bold">
                     17&deg; C
                   </div>
                   <div class="card-body text-dark">
                     <h2 class="card-title my-0">⛅</h2>
                   </div>
-                  <div class="card-footer text-dm bg-transparent pb-0">
+                  <div class="card-footer text-mono fw-bold bg-transparent py-2">
                     Day after tomorrow
                   </div>
                 </div>
