@@ -13,6 +13,7 @@
     "@reduxjs/toolkit": "^1.9.1",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.0",
+    "jquery": "^3.6.3",
     "mongodb": "^4.13.0",
     "mongoose": "^6.8.1",
     "next": "13.1.0",

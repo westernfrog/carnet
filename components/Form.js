@@ -36,7 +36,7 @@ export default function Form(params) {
       <div class="col-md-4">
         <form onSubmit={handleSubmit}>
           <div class="card text-dm border-dark shadow-sm">
-            <div class="card-header shadow-sm mb-2">
+            <div class="card-header shadow-sm mb-3">
               <mark className="fw-bold">-create-</mark> a new note! <br /> Also
               this note will be visible to every person using this site around
               the globe 🌏.
