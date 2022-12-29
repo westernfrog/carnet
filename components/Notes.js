@@ -20,9 +20,9 @@ export default function Notes() {
       <div class="container text-dm">
         <div class="row">
           <div class="col-md-3">
-            <div class="card mt-3 shadow-sm" style={{ width: "18rem" }}>
+            <div class="card mt-3 shadow-sm">
               <div class="card-body">
-                <h5 class="card-title">Made with ❤️ using</h5>
+                <h5 class="card-title">Made with ❣️ using</h5>
                 <h6 class="card-subtitle mb-2 text-muted">
                   Next.js and MongoDB.
                 </h6>
@@ -40,7 +40,7 @@ export default function Notes() {
 function Note({ firstname, lastname }) {
   return (
     <div class="col-md-3">
-      <div class="card mt-3 shadow-sm" style={{ width: "18rem" }}>
+      <div class="card mt-3 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">{firstname || "Title"}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{lastname || "Content"}</h6>
