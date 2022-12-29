@@ -3,7 +3,7 @@ export default function Header() {
     <>
       <nav className="navbar navbar-light container my-3 border-bottom text-slab shadow-sm">
         <div className="container-fluid p-0">
-          <h1 className="navbar-brand h1 fs-3">Cheatsheet</h1>
+          <h1 className="navbar-brand h1 fs-3">Carnet 📑</h1>
           <a
             href="https://github.com/westernfrog"
             target="_blank"
