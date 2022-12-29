@@ -33,10 +33,10 @@ export default function Form(params) {
   if (addMutation.isSuccess) location.reload();
   return (
     <>
-      <div class="col-md-4 mb-4 ">
+      <div class="col-md-4 mb-4">
         <form onSubmit={handleSubmit}>
-          <div class="card text-dm border-2">
-            <div class="card-header">
+          <div class="card text-dm border-2 shadow-sm">
+            <div class="card-header shadow-sm mb-3">
               <mark>-create-</mark> a new note! <br /> Also this note will be
               visible to every person using this site around the globe 🌏.
             </div>
@@ -66,7 +66,7 @@ export default function Form(params) {
               </p>
               <button
                 type="button"
-                className="btn btn-dark shadow-sm rounded-pill"
+                className="btn btn-dark shadow-sm rounded-pill "
                 onClick={handleSubmit}
               >
                 -create-
