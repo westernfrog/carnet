@@ -22,7 +22,7 @@ export default function Weather() {
             <h6 class="card-title text-dm mb-0 pb-1">
               <div>Current weather for 📍 Ranchi, India.</div>
             </h6>
-            <h6 class="card-title pb-2">Today at 29 December, Tuesday</h6>
+
             <div class="row text-center">
               <div className="col-md-4">
                 <div class="card border-0">
