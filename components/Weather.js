@@ -33,7 +33,7 @@ export default function Weather() {
                     <h2 class="card-title my-0">☁️</h2>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-2">
-                    Today
+                    Today, Thursday
                   </div>
                 </div>
               </div>
