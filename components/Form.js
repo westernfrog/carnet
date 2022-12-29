@@ -35,14 +35,14 @@ export default function Form(params) {
     <>
       <div class="col-md-4 mb-4">
         <form onSubmit={handleSubmit}>
-          <div class="card text-dm border-2 shadow-sm">
+          <div class="card text-dm border-dark shadow-sm">
             <div class="card-header shadow-sm mb-2">
               <mark className="fw-bold">-create-</mark> a new note! <br /> Also
               this note will be visible to every person using this site around
               the globe 🌏.
             </div>
             <div class="card-body">
-              <h5 class="card-title">
+              <h6 class="card-title">
                 <input
                   name="firstname"
                   type="text"
@@ -53,7 +53,7 @@ export default function Form(params) {
                   autoComplete="off"
                   autoFocus
                 />
-              </h5>
+              </h6>
               <p class="card-text">
                 <input
                   name="lastname"
@@ -67,7 +67,7 @@ export default function Form(params) {
               </p>
               <button
                 type="button"
-                className="btn btn-dark shadow-sm rounded-pill "
+                className="btn btn-dark shadow-sm rounded-pill mb-2"
                 onClick={handleSubmit}
               >
                 -create-

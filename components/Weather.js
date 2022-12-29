@@ -2,7 +2,7 @@ export default function Weather() {
   return (
     <>
       <div className="col-md-8">
-        <div class="card border-dark shadow-sm">
+        <div class="card border-dark shadow">
           <div class="card-header shadow-sm">
             <div className="row">
               <div className="col-9">
@@ -19,7 +19,7 @@ export default function Weather() {
             </div>
           </div>
           <div class="card-body text-dark">
-            <h5 class="card-title text-dm mb-0 pb-3 text-center fw-bold">
+            <h5 class="card-title text-dm mb-0 pb-4 text-center fw-bold">
               <div>Ranchi, India</div>
             </h5>
 
