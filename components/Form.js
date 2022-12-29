@@ -49,7 +49,7 @@ export default function Form(params) {
                   placeholder="Title.."
                   aria-label="Username"
                   onChange={setFormData}
-                  autocomplete="off"
+                  autoComplete="off"
                 />
               </h5>
               <p class="card-text">
@@ -60,7 +60,7 @@ export default function Form(params) {
                   placeholder="Content.."
                   aria-label="Username"
                   onChange={setFormData}
-                  autocomplete="off"
+                  autoComplete="off"
                 />
               </p>
               <button
