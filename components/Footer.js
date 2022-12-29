@@ -4,9 +4,9 @@ cdate = cdate.getFullYear();
 export default function Footer() {
   return (
     <>
-      <footer className="d-flex flex-wrap justify-content-between align-items-center mb-3 pt-4 mt-5 border-top container">
-        <p className="col-md-4 mb-0 text-dm">&copy; {cdate} Cheatsheet, Inc</p>
-        <span>
+      <footer className="d-flex mb-3 pt-4 mt-5 border-top container justify-content-between align-items-center">
+        <p className="mb-0 text-dm">&copy; {cdate} Cheatsheet, Inc </p>
+        <span className="ms-auto">
           <a
             href="https://github.com/westernfrog"
             className="link-dark"

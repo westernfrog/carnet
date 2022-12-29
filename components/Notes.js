@@ -19,6 +19,16 @@ export default function Notes() {
     <>
       <div class="container text-dm">
         <div class="row">
+          <div class="col-md-3">
+            <div class="card mt-3 shadow-sm" style={{ width: "18rem" }}>
+              <div class="card-body">
+                <h5 class="card-title">Made with ❤️ using</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Next.js and MongoDB.
+                </h6>
+              </div>
+            </div>
+          </div>
           {data.map((obj, i) => (
             <Note {...obj} key={i} />
           ))}

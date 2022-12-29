@@ -40,18 +40,14 @@ export default function Home() {
       <Header />
       <div className="container my-5">
         <div class="row">
-          <div class="col-md-7 mb-4 fs-5 text-dm">
-            Easily share texts or links from mobile to PC or vice versa. <br />
-            Whatsapp and other social medias takes time to share but here you
-            can do it easily.
-            <br /> <br />
-            Can also be used to share the last moment answers in any exam. 😭🤌
-          </div>
-
-          <div class="col-md-5">
+          <div class="col-md-4">
             <form onSubmit={handleSubmit}>
-              <div class="card text-dm">
-                <div class="card-header">CREATE to create a new note!</div>
+              <div class="card text-dm border-2">
+                <div class="card-header">
+                  <mark>-create-</mark> a new note! <br /> Also this note will
+                  be visible to every person using this site around the globe
+                  🌏.
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">
                     <input
