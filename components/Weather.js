@@ -21,7 +21,7 @@ export default function Weather() {
             </div>
           </div>
           <div class="card-body text-dark">
-            <h5 class="card-title pb-2">☀️ How's it look out there?</h5>
+            <h5 class="card-title pb-2">☀️ How&apos;s it look out there?</h5>
             <div class="row text-center">
               <div className="col-md-3">
                 <div class="card border-0">
