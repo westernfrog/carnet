@@ -20,7 +20,7 @@ export default function Weather() {
           </div>
           <div class="card-body text-dark">
             <h5 class="card-title text-dm mb-0 pb-3 text-center fw-bold">
-              <div>Ranchi, India 📍</div>
+              <div>Ranchi, India</div>
             </h5>
 
             <div class="row text-center">
