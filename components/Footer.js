@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <footer className="d-flex mb-3 pt-4 mt-5 border-top container justify-content-between align-items-center">
-        <p className="mb-0 text-dm">&copy; {cdate} Carnet 📑, Inc </p>
+        <p className="mb-0 text-dm">&copy; {cdate} Carnet, Inc </p>
         <span className="ms-auto">
           <a
             href="https://github.com/westernfrog"

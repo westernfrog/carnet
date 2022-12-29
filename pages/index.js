@@ -14,6 +14,7 @@ export default function Home() {
           <Weather />
         </div>
       </div>
+
       <Notes />
       <Footer />
     </>
