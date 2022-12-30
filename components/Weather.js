@@ -67,19 +67,19 @@ export default function Weather() {
           <div class="card-body text-dark pb-0">
             <h5 class="card-title text-dm mb-0 pb-4 text-center fw-bold">
               <i class="fa-solid fa-location-dot"></i>
-              <span className="city"> London, GB</span>
+              <span className="city"> Chandigarh, IN</span>
             </h5>
 
             <div class="row text-center">
               <div className="col-md-4">
                 <div class="card border-0">
                   <div class="card-header bg-white text-mono fw-bold temp">
-                    13&deg; C
+                    20&deg; C
                   </div>
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
                       <img
-                        src="https://cdn-icons-png.flaticon.com/512/3222/3222798.png"
+                        src="https://cdn-icons-png.flaticon.com/512/1684/1684375.png"
                         alt="weather status icon"
                         className="weather-icon"
                         width={"40px"}
@@ -88,7 +88,7 @@ export default function Weather() {
                     </h5>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    Sun Aug 22 2021
+                    Sun Aug 21 2021
                   </div>
                 </div>
               </div>
@@ -100,37 +100,37 @@ export default function Weather() {
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
                       <img
-                        src="https://cdn-icons-png.flaticon.com/512/3222/3222798.png"
+                        src="https://cdn-icons-png.flaticon.com/512/4064/4064276.png"
                         alt="weather status icon"
                         className="weather-icon"
                         width={"40px"}
                       />
-                      <span className="desc text-mono ms-2">Sunny</span>
+                      <span className="desc text-mono ms-2">Clear</span>
                     </h5>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    Sun Aug 22 2021
+                    Mon Aug 22 2021
                   </div>
                 </div>
               </div>
               <div className="col-md-4 d-none d-lg-block">
                 <div class="card border-0">
                   <div class="card-header bg-white text-mono fw-bold temp">
-                    13&deg; C
+                    9&deg; C
                   </div>
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
                       <img
-                        src="https://cdn-icons-png.flaticon.com/512/3222/3222798.png"
+                        src="https://cdn-icons-png.flaticon.com/512/1146/1146860.png"
                         alt="weather status icon"
                         className="weather-icon"
                         width={"40px"}
                       />
-                      <span className="desc text-mono ms-2">Sunny</span>
+                      <span className="desc text-mono ms-2">Rain</span>
                     </h5>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    Sun Aug 22 2021
+                    Tue Aug 23 2021
                   </div>
                 </div>
               </div>
