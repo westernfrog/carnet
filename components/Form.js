@@ -67,7 +67,7 @@ export default function Form(params) {
               </p>
               <button
                 type="button"
-                className="btn btn-dark shadow-sm rounded-pill mb-2"
+                className="btn btn-dark shadow-sm rounded-pill mb-1"
                 onClick={handleSubmit}
               >
                 -create-

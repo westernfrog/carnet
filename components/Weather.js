@@ -29,12 +29,13 @@ export default function Weather() {
     showData(apiData);
   }
   function showData(DataWeather) {
-    $(".city").html(DataWeather.name + ", " + DataWeather.sys.country);
+    $(".city").html(" " + DataWeather.name + ", " + DataWeather.sys.country);
     $(".temp").html(Math.floor(DataWeather.main.temp - 273.15) + "&deg; C");
     $(".weather-icon").attr(
       "src",
       `http://openweathermap.org/img/w/${DataWeather.weather[0].icon}.png`
     );
+    $(".desc").html(DataWeather.weather[0].main);
 
     let d = new Date(1672323806 * 1000);
     let day = d.toString().slice(0, 15);
@@ -44,7 +45,7 @@ export default function Weather() {
   return (
     <>
       <div className="col-md-8 mb-4">
-        <div class="card border-dark shadow">
+        <div class="card border-dark shadow-sm">
           <div class="card-header shadow-sm">
             <div className="row">
               <div className="col-9">
@@ -63,9 +64,10 @@ export default function Weather() {
               </div>
             </div>
           </div>
-          <div class="card-body text-dark">
+          <div class="card-body text-dark pb-0">
             <h5 class="card-title text-dm mb-0 pb-4 text-center fw-bold">
-              <div className="city">London, GB</div>
+              <i class="fa-solid fa-location-dot"></i>
+              <span className="city"> London, GB</span>
             </h5>
 
             <div class="row text-center">
@@ -74,44 +76,61 @@ export default function Weather() {
                   <div class="card-header bg-white text-mono fw-bold temp">
                     13&deg; C
                   </div>
-                  <div class="card-body text-dark">
-                    <h2 class="card-title my-0">
+                  <div class="card-body text-dark ">
+                    <h5 class="card-title my-0">
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/3222/3222798.png"
                         alt="weather status icon"
                         className="weather-icon"
                         width={"40px"}
                       />
-                    </h2>
+                      <span className="desc text-mono ms-2">Sunny</span>
+                    </h5>
                   </div>
-                  <div class="card-footer text-mono fw-bold bg-transparent py-2 day">
+                  <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
                     Sun Aug 22 2021
                   </div>
                 </div>
               </div>
               <div className="col-md-4 d-none d-lg-block">
                 <div class="card border-0">
-                  <div class="card-header bg-white text-mono fw-bold">
-                    11&deg; C
+                  <div class="card-header bg-white text-mono fw-bold temp">
+                    13&deg; C
                   </div>
-                  <div class="card-body text-dark">
-                    <h2 class="card-title my-0">⛅</h2>
+                  <div class="card-body text-dark ">
+                    <h5 class="card-title my-0">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/3222/3222798.png"
+                        alt="weather status icon"
+                        className="weather-icon"
+                        width={"40px"}
+                      />
+                      <span className="desc text-mono ms-2">Sunny</span>
+                    </h5>
                   </div>
-                  <div class="card-footer text-mono fw-bold bg-transparent  py-2">
-                    Tomorrow
+                  <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
+                    Sun Aug 22 2021
                   </div>
                 </div>
               </div>
               <div className="col-md-4 d-none d-lg-block">
                 <div class="card border-0">
-                  <div class="card-header bg-white bg-white text-mono fw-bold">
-                    17&deg; C
+                  <div class="card-header bg-white text-mono fw-bold temp">
+                    13&deg; C
                   </div>
-                  <div class="card-body text-dark">
-                    <h2 class="card-title my-0">⛅</h2>
+                  <div class="card-body text-dark ">
+                    <h5 class="card-title my-0">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/3222/3222798.png"
+                        alt="weather status icon"
+                        className="weather-icon"
+                        width={"40px"}
+                      />
+                      <span className="desc text-mono ms-2">Sunny</span>
+                    </h5>
                   </div>
-                  <div class="card-footer text-mono fw-bold bg-transparent py-2">
-                    Day after tomorrow
+                  <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
+                    Sun Aug 22 2021
                   </div>
                 </div>
               </div>
