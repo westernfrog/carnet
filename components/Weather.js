@@ -55,7 +55,7 @@ export default function Weather() {
               <div className="col-3 ms-auto text-end">
                 <span>
                   <button
-                    className="btn btn-outline-danger rounded-pill py-0"
+                    className="btn btn-outline-danger rounded-pill py-0 shadow"
                     onClick={location}
                   >
                     📍
