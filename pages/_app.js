@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Slab&family=Roboto+Mono&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto+Slab&family=Roboto+Mono&family=Poppins&display=swap"
           rel="stylesheet"
         />
       </Head>
