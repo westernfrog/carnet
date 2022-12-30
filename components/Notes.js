@@ -22,9 +22,7 @@ export default function Notes() {
           <div className="col-md-3">
             <div className="card mt-3 shadow-sm ">
               <div className="card-body">
-                <h5 className="card-title text-poppins fw-bold">
-                  Made with ❣️ using
-                </h5>
+                <h5 className="card-title fw-bold">Made with ❣️ using</h5>
                 <h6 className="card-subtitle mb-2 text-muted">
                   Next.js and MongoDB.
                 </h6>
@@ -44,9 +42,7 @@ function Note({ firstname, lastname }) {
     <div className="col-md-3">
       <div className="card mt-3 shadow-sm ">
         <div className="card-body">
-          <h5 className="card-title text-poppins fw-bold">
-            {firstname || "Title"}
-          </h5>
+          <h5 className="card-title fw-bold">{firstname || "Title"}</h5>
           <h6 className="card-subtitle mb-2 text-muted">
             {lastname || "Content"}
           </h6>
