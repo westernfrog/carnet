@@ -122,7 +122,11 @@ export default function Weather() {
                   <div className="card-body text-dark ">
                     <h5 className="card-title my-0">
                       <img src="/" className="weather-icon" width={"40px"} />
-                      <span className="desc text-mono ms-2"></span>
+                      <span className="desc text-mono ms-2">
+                        <div className="spinner-grow ms-2" role="status">
+                          <span className="visually-hidden">Loading...</span>
+                        </div>
+                      </span>
                     </h5>
                   </div>
                   <div className="card-footer text-mono fw-bold bg-transparent py-3 day">
@@ -142,7 +146,11 @@ export default function Weather() {
                   <div className="card-body text-dark ">
                     <h5 className="card-title my-0">
                       <img src="/" className="weather-icon" width={"40px"} />
-                      <span className="desc text-mono ms-2"></span>
+                      <span className="desc text-mono ms-2">
+                        <div className="spinner-grow ms-2" role="status">
+                          <span className="visually-hidden">Loading...</span>
+                        </div>
+                      </span>
                     </h5>
                   </div>
                   <div className="card-footer text-mono fw-bold bg-transparent py-3 day">
@@ -162,7 +170,11 @@ export default function Weather() {
                   <div className="card-body text-dark ">
                     <h5 className="card-title my-0">
                       <img src="/" className="weather-icon" width={"40px"} />
-                      <span className="desc text-mono ms-2"></span>
+                      <span className="desc text-mono ms-2">
+                        <div className="spinner-grow ms-2" role="status">
+                          <span className="visually-hidden">Loading...</span>
+                        </div>
+                      </span>
                     </h5>
                   </div>
                   <div className="card-footer text-mono fw-bold bg-transparent py-3 day">
