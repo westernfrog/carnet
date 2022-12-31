@@ -122,16 +122,12 @@ export default function Weather() {
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
                       <img
-                        src="https://cdn-icons-png.flaticon.com/512/1684/1684375.png"
+                        src="https://cdn-icons-png.flaticon.com/512/3305/3305803.png"
                         alt="weather status icon"
                         className="weather-icon"
                         width={"40px"}
                       />
-                      <span className="desc text-mono ms-2">
-                        <div class="spinner-grow ms-2" role="status">
-                          <span class="visually-hidden">Loading...</span>
-                        </div>
-                      </span>
+                      <span className="desc text-mono ms-2"></span>
                     </h5>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
@@ -151,16 +147,12 @@ export default function Weather() {
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
                       <img
-                        src="https://cdn-icons-png.flaticon.com/512/4064/4064276.png"
+                        src="https://cdn-icons-png.flaticon.com/512/3305/3305803.png"
                         alt="weather status icon"
                         className="weather-icon"
                         width={"40px"}
                       />
-                      <span className="desc text-mono ms-2">
-                        <div class="spinner-grow ms-2" role="status">
-                          <span class="visually-hidden">Loading...</span>
-                        </div>
-                      </span>
+                      <span className="desc text-mono ms-2"></span>
                     </h5>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
@@ -180,16 +172,12 @@ export default function Weather() {
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
                       <img
-                        src="https://cdn-icons-png.flaticon.com/512/1146/1146860.png"
+                        src="https://cdn-icons-png.flaticon.com/512/3305/3305803.png"
                         alt="weather status icon"
                         className="weather-icon"
                         width={"40px"}
                       />
-                      <span className="desc text-mono ms-2">
-                        <div class="spinner-grow ms-2" role="status">
-                          <span class="visually-hidden">Loading...</span>
-                        </div>
-                      </span>
+                      <span className="desc text-mono ms-2"></span>
                     </h5>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
