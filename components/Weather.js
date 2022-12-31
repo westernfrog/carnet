@@ -1,6 +1,32 @@
 import $ from "jquery";
+import { useEffect } from "react";
 
 export default function Weather() {
+  useEffect(() => {
+    const defaultApi =
+      "https://api.openweathermap.org/data/2.5/weather?&q=Chandigarh&appid=ba0220ef81b4582a85ac35da7e89913c";
+    apiJson(defaultApi);
+
+    async function apiJson(defaults) {
+      const apiUrlData = await fetch(defaults);
+      const apiData = await apiUrlData.json();
+      showDefault(apiData);
+    }
+    function showDefault(DataWeather) {
+      $(".city").html(" " + DataWeather.name + ", " + DataWeather.sys.country);
+      $(".temp").html(Math.floor(DataWeather.main.temp - 273.15) + "&deg; C");
+      $(".weather-icon").attr(
+        "src",
+        `http://openweathermap.org/img/w/${DataWeather.weather[0].icon}.png`
+      );
+      $(".desc").html(DataWeather.weather[0].main);
+
+      let d = new Date(1672323806 * 1000);
+      let day = d.toString().slice(0, 15);
+      $(".day").html(day);
+    }
+  }, []);
+
   function location() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition);
@@ -19,7 +45,8 @@ export default function Weather() {
   function getLocation(latitude, longitude) {
     const apiKey = "ba0220ef81b4582a85ac35da7e89913c";
     const api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
-    console.log(api);
+    const defaultApi =
+      "https://api.openweathermap.org/data/2.5/weather?&q=Chandigarh&appid=ba0220ef81b4582a85ac35da7e89913c";
     apiJson(api);
   }
   async function apiJson(json) {
@@ -28,6 +55,7 @@ export default function Weather() {
 
     showData(apiData);
   }
+
   function showData(DataWeather) {
     $(".city").html(" " + DataWeather.name + ", " + DataWeather.sys.country);
     $(".temp").html(Math.floor(DataWeather.main.temp - 273.15) + "&deg; C");
@@ -45,7 +73,7 @@ export default function Weather() {
   return (
     <>
       <div className="col-md-8 mb-4">
-        <div class="card border-dark shadow-sm">
+        <div class="card border-dark shadow-sm document">
           <div class="card-header shadow-sm">
             <div className="row">
               <div className="col-9">
@@ -67,14 +95,20 @@ export default function Weather() {
           <div class="card-body text-dark pb-0">
             <h5 class="card-title text-dm mb-0 pb-4 text-center fw-bold">
               <i class="fa-solid fa-location-dot"></i>
-              <span className="city"> Chandigarh, IN</span>
+              <span className="city">
+                <div class="spinner-grow ms-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </span>
             </h5>
 
             <div class="row text-center">
               <div className="col-md-4">
                 <div class="card border-0">
                   <div class="card-header bg-white text-mono fw-bold temp">
-                    20&deg; C
+                    <div class="spinner-grow" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
                   </div>
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
@@ -84,18 +118,26 @@ export default function Weather() {
                         className="weather-icon"
                         width={"40px"}
                       />
-                      <span className="desc text-mono ms-2">Sunny</span>
+                      <span className="desc text-mono ms-2">
+                        <div class="spinner-grow ms-2" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                      </span>
                     </h5>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    Sun Aug 21 2021
+                    <div class="spinner-grow" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 d-none d-lg-block">
                 <div class="card border-0">
                   <div class="card-header bg-white text-mono fw-bold temp">
-                    13&deg; C
+                    <div class="spinner-grow" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
                   </div>
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
@@ -105,18 +147,26 @@ export default function Weather() {
                         className="weather-icon"
                         width={"40px"}
                       />
-                      <span className="desc text-mono ms-2">Clear</span>
+                      <span className="desc text-mono ms-2">
+                        <div class="spinner-grow ms-2" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                      </span>
                     </h5>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    Mon Aug 22 2021
+                    <div class="spinner-grow" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 d-none d-lg-block">
                 <div class="card border-0">
                   <div class="card-header bg-white text-mono fw-bold temp">
-                    9&deg; C
+                    <div class="spinner-grow" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
                   </div>
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
@@ -126,11 +176,17 @@ export default function Weather() {
                         className="weather-icon"
                         width={"40px"}
                       />
-                      <span className="desc text-mono ms-2">Rain</span>
+                      <span className="desc text-mono ms-2">
+                        <div class="spinner-grow ms-2" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                      </span>
                     </h5>
                   </div>
                   <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    Tue Aug 23 2021
+                    <div class="spinner-grow" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
                   </div>
                 </div>
               </div>
