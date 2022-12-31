@@ -122,7 +122,7 @@ export default function Weather() {
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
                       <img
-                        src="https://cdn-icons-png.flaticon.com/512/0/14.png"
+                        src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
                         alt="weather status icon"
                         className="weather-icon opacity-50"
                         width={"40px"}
@@ -147,7 +147,7 @@ export default function Weather() {
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
                       <img
-                        src="https://cdn-icons-png.flaticon.com/512/0/14.png"
+                        src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
                         alt="weather status icon"
                         className="weather-icon opacity-50"
                         width={"40px"}
@@ -172,7 +172,7 @@ export default function Weather() {
                   <div class="card-body text-dark ">
                     <h5 class="card-title my-0">
                       <img
-                        src="https://cdn-icons-png.flaticon.com/512/0/14.png"
+                        src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
                         alt="weather status icon"
                         className="weather-icon opacity-50"
                         width={"40px"}
