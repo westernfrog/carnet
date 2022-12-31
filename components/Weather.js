@@ -70,6 +70,11 @@ export default function Weather() {
     console.log(day);
     $(".day").html(day);
   }
+  $(".btn").on("click", function (e) {
+    e.preventDefault();
+    $(".pin").removeClass("fa-bounce");
+  });
+
   return (
     <>
       <div className="col-md-8 mb-4">
@@ -86,7 +91,7 @@ export default function Weather() {
                     className="btn btn-outline-danger rounded-pill py-0 shadow"
                     onClick={location}
                   >
-                    📍
+                    <i class="fa-solid fa-location-dot fa-bounce pin"></i>
                   </button>
                 </span>
               </div>
