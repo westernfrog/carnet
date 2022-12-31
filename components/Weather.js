@@ -101,7 +101,7 @@ export default function Weather() {
           </div>
           <div class="card-body text-dark pb-0">
             <h5 class="card-title text-dm mb-0 pb-4 text-center fw-bold">
-              <span style={{ color: "#E0144C" }}>
+              <span>
                 <i class="fa-solid fa-location-dot"></i>
               </span>
               <span className="city">
