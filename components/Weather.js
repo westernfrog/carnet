@@ -17,7 +17,7 @@ export default function Weather() {
       $(".temp").html(Math.floor(DataWeather.main.temp - 273.15) + "&deg; C");
       $(".weather-icon").attr(
         "src",
-        `http://openweathermap.org/img/w/${DataWeather.weather[0].icon}.png`
+        `http://openweathermap.org/img/wn/${DataWeather.weather[0].icon}@2x.png`
       );
       $(".desc").html(DataWeather.weather[0].main);
 
@@ -61,7 +61,7 @@ export default function Weather() {
     $(".temp").html(Math.floor(DataWeather.main.temp - 273.15) + "&deg; C");
     $(".weather-icon").attr(
       "src",
-      `http://openweathermap.org/img/w/${DataWeather.weather[0].icon}.png`
+      `http://openweathermap.org/img/wn/${DataWeather.weather[0].icon}@2x.png`
     );
     $(".desc").html(DataWeather.weather[0].main);
 
@@ -124,7 +124,7 @@ export default function Weather() {
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
                         alt="weather status icon"
-                        className="weather-icon opacity-75"
+                        className="weather-icon"
                         width={"40px"}
                       />
                       <span className="desc text-mono ms-2"></span>
@@ -149,7 +149,7 @@ export default function Weather() {
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
                         alt="weather status icon"
-                        className="weather-icon opacity-75"
+                        className="weather-icon"
                         width={"40px"}
                       />
                       <span className="desc text-mono ms-2"></span>
@@ -174,7 +174,7 @@ export default function Weather() {
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
                         alt="weather status icon"
-                        className="weather-icon opacity-75"
+                        className="weather-icon"
                         width={"40px"}
                       />
                       <span className="desc text-mono ms-2"></span>
