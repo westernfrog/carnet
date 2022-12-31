@@ -124,7 +124,7 @@ export default function Weather() {
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
                         alt="weather status icon"
-                        className="weather-icon opacity-50"
+                        className="weather-icon opacity-75"
                         width={"40px"}
                       />
                       <span className="desc text-mono ms-2"></span>
@@ -149,7 +149,7 @@ export default function Weather() {
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
                         alt="weather status icon"
-                        className="weather-icon opacity-50"
+                        className="weather-icon opacity-75"
                         width={"40px"}
                       />
                       <span className="desc text-mono ms-2"></span>
@@ -174,7 +174,7 @@ export default function Weather() {
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
                         alt="weather status icon"
-                        className="weather-icon opacity-50"
+                        className="weather-icon opacity-75"
                         width={"40px"}
                       />
                       <span className="desc text-mono ms-2"></span>
