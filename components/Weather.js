@@ -70,10 +70,12 @@ export default function Weather() {
     console.log(day);
     $(".day").html(day);
   }
-  $(".btn").on("click", function (e) {
-    e.preventDefault();
-    $(".pin").removeClass("fa-bounce");
-  });
+  useEffect(() => {
+    $(".btn").on("click", function (e) {
+      e.preventDefault();
+      $(".pin").removeClass("fa-bounce");
+    });
+  }, []);
 
   return (
     <>
