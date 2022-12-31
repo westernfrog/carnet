@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Header />
       <div className="container my-5">
-        <div class="row">
+        <div className="row">
           <Weather />
           <Form />
         </div>

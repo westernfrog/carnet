@@ -13,7 +13,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-brands fa-github fa-lg"></i>
+            <i className="fa-brands fa-github fa-lg"></i>
           </a>
           <a
             className="link-dark"
@@ -21,7 +21,7 @@ export default function Footer() {
             rel="noreferrer"
             href="https://www.instagram.com/iam__amansingh"
           >
-            <i class="fa-brands fa-instagram fa-lg mx-3"></i>
+            <i className="fa-brands fa-instagram fa-lg mx-3"></i>
           </a>
           <a
             target="_blank"
@@ -29,7 +29,7 @@ export default function Footer() {
             href="https://www.discordapp.com/users/888993682018168842"
             className="link-dark"
           >
-            <i class="fa-brands fa-discord fa-lg"></i>
+            <i className="fa-brands fa-discord fa-lg"></i>
           </a>
         </span>
       </footer>

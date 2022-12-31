@@ -14,7 +14,7 @@ export default function Header() {
             >
               <span className="d-flex flex-wrap justify-content-between align-items-center">
                 <span className="d-none d-lg-block pe-2">Github</span>
-                <i class="fa-brands fa-github fa-lg"></i>
+                <i className="fa-brands fa-github fa-lg"></i>
               </span>
             </a>
           </div>

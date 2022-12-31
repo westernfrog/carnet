@@ -80,8 +80,8 @@ export default function Weather() {
   return (
     <>
       <div className="col-md-8 mb-4">
-        <div class="card border-dark shadow-sm document">
-          <div class="card-header shadow-sm">
+        <div className="card border-dark shadow-sm document">
+          <div className="card-header shadow-sm">
             <div className="row">
               <div className="col-9">
                 <p className="m-0 text-dm">Weather</p>
@@ -93,96 +93,81 @@ export default function Weather() {
                     className="btn btn-outline-danger rounded-pill py-0 shadow"
                     onClick={location}
                   >
-                    <i class="fa-solid fa-location-dot fa-bounce pin"></i>
+                    <i className="fa-solid fa-location-dot fa-bounce pin"></i>
                   </button>
                 </span>
               </div>
             </div>
           </div>
-          <div class="card-body text-dark pb-0">
-            <h5 class="card-title text-dm mb-0 pb-4 text-center fw-bold">
+          <div className="card-body text-dark pb-0">
+            <h5 className="card-title text-dm mb-0 pb-4 text-center fw-bold">
               <span>
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
               </span>
               <span className="city">
-                <div class="spinner-grow ms-2" role="status">
-                  <span class="visually-hidden">Loading...</span>
+                <div className="spinner-grow ms-2" role="status">
+                  <span className="visually-hidden">Loading...</span>
                 </div>
               </span>
             </h5>
 
-            <div class="row text-center">
+            <div className="row text-center">
               <div className="col-md-4">
-                <div class="card border-0">
-                  <div class="card-header bg-white text-mono fw-bold temp">
-                    <div class="spinner-grow" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                <div className="card border-0">
+                  <div className="card-header bg-white text-mono fw-bold temp">
+                    <div className="spinner-grow" role="status">
+                      <span className="visually-hidden">Loading...</span>
                     </div>
                   </div>
-                  <div class="card-body text-dark ">
-                    <h5 class="card-title my-0">
-                      <img
-                        src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
-                        alt="weather status icon"
-                        className="weather-icon"
-                        width={"40px"}
-                      />
+                  <div className="card-body text-dark ">
+                    <h5 className="card-title my-0">
+                      <img src="/" className="weather-icon" width={"40px"} />
                       <span className="desc text-mono ms-2"></span>
                     </h5>
                   </div>
-                  <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    <div class="spinner-grow" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                  <div className="card-footer text-mono fw-bold bg-transparent py-3 day">
+                    <div className="spinner-grow" role="status">
+                      <span className="visually-hidden">Loading...</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 d-none d-lg-block">
-                <div class="card border-0">
-                  <div class="card-header bg-white text-mono fw-bold temp">
-                    <div class="spinner-grow" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                <div className="card border-0">
+                  <div className="card-header bg-white text-mono fw-bold temp">
+                    <div className="spinner-grow" role="status">
+                      <span className="visually-hidden">Loading...</span>
                     </div>
                   </div>
-                  <div class="card-body text-dark ">
-                    <h5 class="card-title my-0">
-                      <img
-                        src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
-                        alt="weather status icon"
-                        className="weather-icon"
-                        width={"40px"}
-                      />
+                  <div className="card-body text-dark ">
+                    <h5 className="card-title my-0">
+                      <img src="/" className="weather-icon" width={"40px"} />
                       <span className="desc text-mono ms-2"></span>
                     </h5>
                   </div>
-                  <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    <div class="spinner-grow" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                  <div className="card-footer text-mono fw-bold bg-transparent py-3 day">
+                    <div className="spinner-grow" role="status">
+                      <span className="visually-hidden">Loading...</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 d-none d-lg-block">
-                <div class="card border-0">
-                  <div class="card-header bg-white text-mono fw-bold temp">
-                    <div class="spinner-grow" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                <div className="card border-0">
+                  <div className="card-header bg-white text-mono fw-bold temp">
+                    <div className="spinner-grow" role="status">
+                      <span className="visually-hidden">Loading...</span>
                     </div>
                   </div>
-                  <div class="card-body text-dark ">
-                    <h5 class="card-title my-0">
-                      <img
-                        src="https://cdn-icons-png.flaticon.com/512/4461/4461744.png"
-                        alt="weather status icon"
-                        className="weather-icon"
-                        width={"40px"}
-                      />
+                  <div className="card-body text-dark ">
+                    <h5 className="card-title my-0">
+                      <img src="/" className="weather-icon" width={"40px"} />
                       <span className="desc text-mono ms-2"></span>
                     </h5>
                   </div>
-                  <div class="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    <div class="spinner-grow" role="status">
-                      <span class="visually-hidden">Loading...</span>
+                  <div className="card-footer text-mono fw-bold bg-transparent py-3 day">
+                    <div className="spinner-grow" role="status">
+                      <span className="visually-hidden">Loading...</span>
                     </div>
                   </div>
                 </div>

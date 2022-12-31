@@ -33,16 +33,16 @@ export default function Form(params) {
   if (addMutation.isSuccess) location.reload();
   return (
     <>
-      <div class="col-md-4">
+      <div className="col-md-4">
         <form onSubmit={handleSubmit}>
-          <div class="card text-dm border-dark shadow-sm">
-            <div class="card-header shadow-sm mb-3">
+          <div className="card text-dm border-dark shadow-sm">
+            <div className="card-header shadow-sm mb-3">
               <mark className="fw-bold">-create-</mark> a new note! <br /> Also
               this note will be visible to every person using this site around
               the globe 🌏.
             </div>
-            <div class="card-body">
-              <h6 class="card-title">
+            <div className="card-body">
+              <h6 className="card-title">
                 <input
                   name="firstname"
                   type="text"
@@ -54,7 +54,7 @@ export default function Form(params) {
                   autoFocus
                 />
               </h6>
-              <p class="card-text">
+              <p className="card-text">
                 <input
                   name="lastname"
                   type="text"
