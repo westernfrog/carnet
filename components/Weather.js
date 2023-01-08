@@ -43,24 +43,25 @@ export default function Wea() {
 
   return (
     <>
-      <div className="card text-light mt-4 bg-dark">
+      <div className="card text-light mt-4 bg-black">
         <div className="row mx-0 px-0">
           <div className="col-8 text-start px-0">
-            <div className="card-body text-rubik fw-bold py-2 bg-dark">
-              <p className="card-title mb-0 city bg-dark">your heart</p>
-              <p className="card-title mb-0 bg-dark">
-                <span className="temp bg-dark">37&deg; C</span>&nbsp;
+            <div className="card-body text-rubik fw-bold py-2 bg-black">
+              <p className="card-title mb-0 city bg-black">your heart</p>
+              <p className="card-title mb-0 bg-black">
+                <span className="temp bg-black">37&deg; C</span>&nbsp;
                 <span className="fw-light">
-                  &#40;<span className="desc text-lowercase bg-dark">love</span>
+                  &#40;
+                  <span className="desc text-lowercase bg-black">love</span>
                   &#41;
                 </span>
               </p>
             </div>
           </div>
-          <div className="col-4 d-flex align-items-center justify-content-between bg-dark">
-            <div className="card-body text-rubik bg-dark">
-              <p className="card-title h5 text-end bg-dark">
-                <i className="fa-solid fa-location-dot text-danger grow pin bg-dark"></i>
+          <div className="col-4 d-flex align-items-center justify-content-between bg-black">
+            <div className="card-body text-rubik bg-black">
+              <p className="card-title h5 text-end bg-black">
+                <i className="fa-solid fa-location-dot text-danger grow pin bg-black"></i>
               </p>
             </div>
           </div>

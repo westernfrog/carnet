@@ -62,11 +62,11 @@ export default function Form() {
               </p>
               <button
                 type="button"
-                className="btn bg-dark text-light rounded-pill mb-1 text-muted"
+                className="btn bg-black text-light rounded-pill mb-1 text-muted"
                 onClick={handleSubmit}
               >
                 create
-                <i class="fa-solid fa-arrow-right ms-2 grow text-muted bg-dark"></i>
+                <i class="fa-solid fa-arrow-right ms-2 grow text-muted bg-black"></i>
               </button>
             </div>
           </div>
