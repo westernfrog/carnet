@@ -58,7 +58,7 @@ export default function Wea() {
               </p>
             </div>
           </div>
-          <div className="col-4 d-flex align-items-center justify-content-between bg-black">
+          <div className="col-4 d-flex align-items-center justify-content-between bg-black px-0">
             <div className="card-body text-rubik bg-black">
               <p className="card-title h5 text-end bg-black">
                 <i className="fa-solid fa-location-dot text-danger grow pin bg-black"></i>
