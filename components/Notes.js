@@ -7,7 +7,7 @@ export default function Notes() {
   const { isLoading, isError, data, error } = useQuery("cheatsheet", getUsers);
   if (isLoading)
     return (
-      <div className="container fs-3">
+      <div className="container fs-6 text-rubik">
         <Loading />
         ...there are many notes and the database I am using is slow so have
         patience.
