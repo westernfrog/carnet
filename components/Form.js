@@ -43,7 +43,6 @@ export default function Form() {
                   type="text"
                   className="form-control bg-dark border-0 text-light"
                   placeholder="title!"
-                  aria-label="Username"
                   onChange={setFormData}
                   autoComplete="off"
                   autoFocus
@@ -56,7 +55,6 @@ export default function Form() {
                   type="text"
                   className="form-control bg-dark border-0 text-light"
                   placeholder="what's on your mind?"
-                  aria-label="Username"
                   onChange={setFormData}
                   autoComplete="off"
                   style={{ resize: "none" }}

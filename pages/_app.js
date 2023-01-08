@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
-          href="https://cdn-icons-png.flaticon.com/512/2994/2994337.png"
+          href="https://cdn-icons-png.flaticon.com/512/9337/9337768.png"
         />
       </Head>
       <Script
@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }) {
       ></Script>
       <Script
         src="https://kit.fontawesome.com/5818d7bece.js"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       ></Script>
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />

@@ -8,10 +8,6 @@
 .text-rubik {
   font-family: "Rubik", serif;
 }
-.text-mono {
-  font-family: "Roboto Mono", serif;
-}
-
 .grow:hover {
   transform: translate(0px, -5px);
   transition: transform 300ms ease-in-out;
