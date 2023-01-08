@@ -6,7 +6,7 @@ const formReducer = (state, event) => {
   return { ...state, [event.target.name]: event.target.value };
 };
 
-export default function Form(params) {
+export default function Form() {
   const queryClient = useQueryClient();
   const [formData, setFormData] = useReducer(formReducer, {});
   const addMutation = useMutation(addUser, {
@@ -33,44 +33,42 @@ export default function Form(params) {
   if (addMutation.isSuccess) location.reload();
   return (
     <>
-      <div className="col-md-4">
+      <div className="col-md-10 text-rubik">
         <form onSubmit={handleSubmit}>
-          <div className="card text-dm border-dark shadow-sm">
-            <div className="card-header shadow-sm mb-3">
-              <mark className="fw-bold">-create-</mark> a new note! <br /> Also
-              this note will be visible to every person using this site around
-              the globe 🌏.
-            </div>
+          <div className="card text-dm border-dark">
             <div className="card-body">
               <h6 className="card-title">
-                <input
+                <textarea
                   name="firstname"
                   type="text"
-                  className="form-control shadow-sm"
-                  placeholder="Title.."
+                  className="form-control bg-dark border-0 text-light"
+                  placeholder="title!"
                   aria-label="Username"
                   onChange={setFormData}
                   autoComplete="off"
                   autoFocus
+                  style={{ resize: "none" }}
                 />
               </h6>
               <p className="card-text">
-                <input
+                <textarea
                   name="lastname"
                   type="text"
-                  className="form-control shadow-sm"
-                  placeholder="Content.."
+                  className="form-control bg-dark border-0 text-light"
+                  placeholder="what's on your mind?"
                   aria-label="Username"
                   onChange={setFormData}
                   autoComplete="off"
+                  style={{ resize: "none" }}
                 />
               </p>
               <button
                 type="button"
-                className="btn btn-dark shadow-sm rounded-pill mb-1"
+                className="btn bg-dark text-light rounded-pill mb-1 text-muted"
                 onClick={handleSubmit}
               >
-                -create-
+                create
+                <i class="fa-solid fa-arrow-right ms-2 grow text-muted bg-dark"></i>
               </button>
             </div>
           </div>

@@ -1,30 +1,11 @@
 import $ from "jquery";
 import { useEffect } from "react";
 
-export default function Weather() {
+export default function Wea() {
   useEffect(() => {
-    const defaultApi =
-      "https://api.openweathermap.org/data/2.5/weather?&q=Chandigarh&appid=ba0220ef81b4582a85ac35da7e89913c";
-    apiJson(defaultApi);
-
-    async function apiJson(defaults) {
-      const apiUrlData = await fetch(defaults);
-      const apiData = await apiUrlData.json();
-      showDefault(apiData);
-    }
-    function showDefault(DataWeather) {
-      $(".city").html(" " + DataWeather.name + ", " + DataWeather.sys.country);
-      $(".temp").html(Math.floor(DataWeather.main.temp - 273.15) + "&deg; C");
-      $(".weather-icon").attr(
-        "src",
-        `http://openweathermap.org/img/wn/${DataWeather.weather[0].icon}@2x.png`
-      );
-      $(".desc").html(DataWeather.weather[0].main);
-
-      let d = new Date(1672323806 * 1000);
-      let day = d.toString().slice(0, 15);
-      $(".day").html(day);
-    }
+    $(".pin").on("click", function () {
+      location();
+    });
   }, []);
 
   function location() {
@@ -44,9 +25,7 @@ export default function Weather() {
 
   function getLocation(latitude, longitude) {
     const apiKey = "ba0220ef81b4582a85ac35da7e89913c";
-    const api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
-    const defaultApi =
-      "https://api.openweathermap.org/data/2.5/weather?&q=Chandigarh&appid=ba0220ef81b4582a85ac35da7e89913c";
+    const api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
     apiJson(api);
   }
   async function apiJson(json) {
@@ -57,133 +36,31 @@ export default function Weather() {
   }
 
   function showData(DataWeather) {
-    $(".city").html(" " + DataWeather.name + ", " + DataWeather.sys.country);
-    $(".temp").html(Math.floor(DataWeather.main.temp - 273.15) + "&deg; C");
-    $(".weather-icon").attr(
-      "src",
-      `http://openweathermap.org/img/wn/${DataWeather.weather[0].icon}@2x.png`
-    );
+    $(".city").html(" " + DataWeather.name);
+    $(".temp").html(Math.floor(DataWeather.main.temp) + "&deg; C");
     $(".desc").html(DataWeather.weather[0].main);
-
-    let d = new Date(1672323806 * 1000);
-    let day = d.toString().slice(0, 15);
-    console.log(day);
-    $(".day").html(day);
   }
-  useEffect(() => {
-    $(".btn").on("click", function (e) {
-      e.preventDefault();
-      $(".pin").removeClass("fa-bounce");
-    });
-  }, []);
 
   return (
     <>
-      <div className="col-md-8 mb-4">
-        <div className="card border-dark shadow-sm document">
-          <div className="card-header shadow-sm">
-            <div className="row">
-              <div className="col-9">
-                <p className="m-0 text-dm">Weather</p>
-              </div>
-
-              <div className="col-3 ms-auto text-end">
-                <span>
-                  <button
-                    className="btn btn-outline-danger rounded-pill py-0 shadow"
-                    onClick={location}
-                  >
-                    <i className="fa-solid fa-location-dot fa-bounce pin"></i>
-                  </button>
+      <div className="card text-light mt-4 border-dark">
+        <div className="row mx-0 px-0">
+          <div className="col-8 text-start px-0">
+            <div className="card-body text-rubik fw-bold py-2">
+              <p className="card-title mb-0 city">your heart</p>
+              <p className="card-title mb-0">
+                <span className="temp">37&deg; C</span>&nbsp;
+                <span className="fw-light">
+                  &#40;<span className="desc text-lowercase">love</span>&#41;
                 </span>
-              </div>
+              </p>
             </div>
           </div>
-          <div className="card-body text-dark pb-0">
-            <h5 className="card-title text-dm mb-0 pb-4 text-center fw-bold">
-              <span>
-                <i className="fa-solid fa-location-dot"></i>
-              </span>
-              <span className="city">
-                <div className="spinner-grow ms-2" role="status">
-                  <span className="visually-hidden">Loading...</span>
-                </div>
-              </span>
-            </h5>
-
-            <div className="row text-center">
-              <div className="col-md-4">
-                <div className="card border-0">
-                  <div className="card-header bg-white text-mono fw-bold temp">
-                    <div className="spinner-grow" role="status">
-                      <span className="visually-hidden">Loading...</span>
-                    </div>
-                  </div>
-                  <div className="card-body text-dark ">
-                    <h5 className="card-title my-0">
-                      <img src="/" className="weather-icon" width={"40px"} />
-                      <span className="desc text-mono ms-2">
-                        <div className="spinner-grow ms-2" role="status">
-                          <span className="visually-hidden">Loading...</span>
-                        </div>
-                      </span>
-                    </h5>
-                  </div>
-                  <div className="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    <div className="spinner-grow" role="status">
-                      <span className="visually-hidden">Loading...</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 d-none d-lg-block">
-                <div className="card border-0">
-                  <div className="card-header bg-white text-mono fw-bold temp">
-                    <div className="spinner-grow" role="status">
-                      <span className="visually-hidden">Loading...</span>
-                    </div>
-                  </div>
-                  <div className="card-body text-dark ">
-                    <h5 className="card-title my-0">
-                      <img src="/" className="weather-icon" width={"40px"} />
-                      <span className="desc text-mono ms-2">
-                        <div className="spinner-grow ms-2" role="status">
-                          <span className="visually-hidden">Loading...</span>
-                        </div>
-                      </span>
-                    </h5>
-                  </div>
-                  <div className="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    <div className="spinner-grow" role="status">
-                      <span className="visually-hidden">Loading...</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4 d-none d-lg-block">
-                <div className="card border-0">
-                  <div className="card-header bg-white text-mono fw-bold temp">
-                    <div className="spinner-grow" role="status">
-                      <span className="visually-hidden">Loading...</span>
-                    </div>
-                  </div>
-                  <div className="card-body text-dark ">
-                    <h5 className="card-title my-0">
-                      <img src="/" className="weather-icon" width={"40px"} />
-                      <span className="desc text-mono ms-2">
-                        <div className="spinner-grow ms-2" role="status">
-                          <span className="visually-hidden">Loading...</span>
-                        </div>
-                      </span>
-                    </h5>
-                  </div>
-                  <div className="card-footer text-mono fw-bold bg-transparent py-3 day">
-                    <div className="spinner-grow" role="status">
-                      <span className="visually-hidden">Loading...</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="col-4 d-flex align-items-center justify-content-between">
+            <div className="card-body text-rubik">
+              <p className="card-title h5 text-end">
+                <i className="fa-solid fa-location-dot text-danger grow pin"></i>
+              </p>
             </div>
           </div>
         </div>

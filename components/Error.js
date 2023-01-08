@@ -2,11 +2,10 @@ export default function Error() {
   return (
     <>
       <div
-        className="alert alert-danger alert-dismissible fade show container"
+        className="alert alert-dark alert-dismissible fade show container text-light"
         role="alert"
       >
-        <strong>Holy guacamole!</strong> Uncaught an error!.. this is definitely
-        from the server side.
+        <strong>holy cow!</strong> there is an error inside the server.
         <button
           type="button"
           className="btn-close"

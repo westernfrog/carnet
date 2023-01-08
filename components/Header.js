@@ -1,24 +1,32 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <>
-      <div className="border-bottom text-slab shadow-sm">
-        <nav className="navbar navbar-light container mt-2">
-          <div className="container-fluid p-0">
-            <h1 className="navbar-brand h1 fs-3">Carnet 📑</h1>
-            <a
-              href="https://github.com/westernfrog"
-              target="_blank"
-              rel="noreferrer"
-              className="btn ms-auto fs-5 link-dark"
-              type="submit"
-            >
-              <span className="d-flex flex-wrap justify-content-between align-items-center">
-                <span className="d-none d-lg-block pe-2">Github</span>
-                <i className="fa-brands fa-github fa-lg"></i>
-              </span>
-            </a>
+      <div className="container my-5">
+        <div className="row">
+          <div className="col-lg-1"></div>
+          <div className="col-lg-11">
+            <ul className="nav">
+              <li className="nav-item">
+                <Link className="nav-link text-light ps-0" href="/">
+                  carnet
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-light" href="/">
+                  home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-light" href="/chat">
+                  chat&nbsp;&nbsp;
+                  <i className="fa-solid fa-comment-dots grow"></i>
+                </Link>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
       </div>
     </>
   );

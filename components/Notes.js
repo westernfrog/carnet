@@ -17,18 +17,22 @@ export default function Notes() {
 
   return (
     <>
-      <div className="container text-dm">
+      <div className="container text-rubik my-5">
+        <p className="fw-bold text-center my-5">
+          note junk<i class="fa-solid fa-arrow-down ms-2 grow"></i>
+        </p>
         <div className="row">
           <div className="col-md-3">
-            <div className="card mt-3 shadow-sm ">
-              <div className="card-body">
-                <h5 className="card-title fw-bold">Made with ❣️ using</h5>
-                <h6 className="card-subtitle mb-2 text-muted">
-                  Next.js and MongoDB.
-                </h6>
+            <div className="card mt-3 shadow-sm border-0">
+              <div className="card-body bg-dark">
+                <p className="card-title bg-dark">made with ❣️ using</p>
+                <p className="card-subtitle mb-2 bg-dark">
+                  next.js and mongodb.
+                </p>
               </div>
             </div>
           </div>
+
           {data.map((obj, i) => (
             <Note {...obj} key={i} />
           ))}
@@ -40,12 +44,10 @@ export default function Notes() {
 function Note({ firstname, lastname }) {
   return (
     <div className="col-md-3">
-      <div className="card mt-3 shadow-sm ">
-        <div className="card-body">
-          <h5 className="card-title fw-bold">{firstname || "Title"}</h5>
-          <h6 className="card-subtitle mb-2 text-muted">
-            {lastname || "Content"}
-          </h6>
+      <div className="card mt-3 shadow-sm border-0">
+        <div className="card-body bg-dark">
+          <p className="card-title bg-dark">{firstname || "title"}</p>
+          <p className="card-subtitle mb-2 bg-dark">{lastname || "content"}</p>
         </div>
       </div>
     </div>

@@ -1,21 +1,9 @@
-import Notes from "../components/Notes";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Weather from "../components/Weather";
-import Form from "../components/Form";
+import Home from "./home";
 
-export default function Home() {
+export default function Index() {
   return (
     <>
-      <Header />
-      <div className="container my-5">
-        <div className="row">
-          <Weather />
-          <Form />
-        </div>
-      </div>
-      <Notes />
-      <Footer />
+      <Home />
     </>
   );
 }
