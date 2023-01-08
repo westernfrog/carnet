@@ -5,7 +5,8 @@ export default function Error() {
         className="alert alert-danger alert-dismissible fade show container"
         role="alert"
       >
-        <strong>holy cow!</strong> there is an error inside the server.
+        <strong className="bg-transparent text-danger">holy cow!</strong> there
+        is an error inside the server.
         <button
           type="button"
           className="btn-close"
