@@ -33,7 +33,7 @@ export default function Notes() {
             </div>
           </div>
 
-          {data.map((obj, i) => (
+          {data.reverse().map((obj, i) => (
             <Note {...obj} key={i} />
           ))}
         </div>
