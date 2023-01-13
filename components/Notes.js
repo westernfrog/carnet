@@ -46,6 +46,7 @@ function Note({ firstname, lastname }) {
     <div className="col-md-3">
       <div className="card mt-3 shadow-sm border-0">
         <div className="card-body bg-dark">
+          <p className="card-title mb-2 bg-dark">{firstname || "title"}</p>
           <p className="card-subtitle mb-2 bg-dark">{lastname || "content"}</p>
         </div>
       </div>

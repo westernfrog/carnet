@@ -39,6 +39,15 @@ export default function Form() {
             <div className="card-body">
               <p className="card-text">
                 <textarea
+                  name="firstname"
+                  type="text"
+                  className="form-control bg-dark border-0 text-light mb-2"
+                  placeholder="title"
+                  onChange={setFormData}
+                  autoComplete="off"
+                  style={{ resize: "none" }}
+                />
+                <textarea
                   name="lastname"
                   type="text"
                   className="form-control bg-dark border-0 text-light g-3"
