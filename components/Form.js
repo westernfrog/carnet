@@ -45,6 +45,7 @@ export default function Form() {
                   placeholder="what's on your mind?"
                   onChange={setFormData}
                   autoComplete="off"
+                  rows="4"
                   style={{ resize: "none" }}
                 />
               </p>
@@ -54,7 +55,7 @@ export default function Form() {
                 onClick={handleSubmit}
               >
                 create
-                <i class="fa-solid fa-arrow-right ms-2 grow text-muted bg-black"></i>
+                <i class="fa-regular fa-paper-plane ms-2 grow text-muted bg-black"></i>
               </button>
             </div>
           </div>
