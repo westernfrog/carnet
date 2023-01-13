@@ -37,23 +37,11 @@ export default function Form() {
         <form onSubmit={handleSubmit}>
           <div className="card text-dm border-dark">
             <div className="card-body">
-              <h6 className="card-title">
-                <textarea
-                  name="firstname"
-                  type="text"
-                  className="form-control bg-dark border-0 text-light"
-                  placeholder="title!"
-                  onChange={setFormData}
-                  autoComplete="off"
-                  autoFocus
-                  style={{ resize: "none" }}
-                />
-              </h6>
               <p className="card-text">
                 <textarea
                   name="lastname"
                   type="text"
-                  className="form-control bg-dark border-0 text-light"
+                  className="form-control bg-dark border-0 text-light g-3"
                   placeholder="what's on your mind?"
                   onChange={setFormData}
                   autoComplete="off"
