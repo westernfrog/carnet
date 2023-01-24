@@ -19,7 +19,7 @@ Loved the tool? Please consider donating</a> 💸 to help it improve!
 </p>
 
 <p align="center">
-<a href="https://www.buymeacoffee.com/rahuldkjain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:1px" />
+<a href="https://www.buymeacoffee.com/amansinghme" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:1px" />
 </p>
   
 ## 🛠️ Installation Steps
