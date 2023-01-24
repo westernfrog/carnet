@@ -1,6 +1,7 @@
 import { useReducer } from "react";
 import { useQueryClient, useMutation } from "react-query";
 import { addUser, getUsers } from "../lib/helper";
+import $ from "jquery";
 
 const formReducer = (state, event) => {
   return { ...state, [event.target.name]: event.target.value };
@@ -17,8 +18,11 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (Object.keys(formData).length == 0)
+    if (Object.keys(formData).length == 0) {
+      $(".content").attr("placeholder", "write something :(");
       return console.log("Enter Something");
+    }
+
     let { firstname, lastname } = formData;
 
     const model = {
@@ -46,16 +50,18 @@ export default function Form() {
                   onChange={setFormData}
                   autoComplete="off"
                   style={{ resize: "none", borderRadius: "9px" }}
+                  required
                 />
                 <textarea
                   name="lastname"
                   type="text"
-                  className="form-control g-3 border border-2"
+                  className="form-control g-3 border border-2 content"
                   placeholder="what's on your mind?"
                   onChange={setFormData}
                   autoComplete="off"
                   rows="4"
                   style={{ resize: "none", borderRadius: "9px" }}
+                  required
                 />
               </p>
               <button

@@ -6,7 +6,7 @@ export default function Chat() {
   return (
     <>
       <Header />
-      <div className="container mb-5 clearfix">
+      <div className="container mb-5">
         <div className="row">
           <div className="col-md-1"></div>
           <div className="col-md-4">
