@@ -43,25 +43,28 @@ export default function Wea() {
 
   return (
     <>
-      <div className="card text-light mt-4 bg-black">
+      <div
+        className="card text-light mt-4 border border-2"
+        style={{ borderRadius: "9px" }}
+      >
         <div className="row mx-0 px-0">
           <div className="col-8 text-start px-0">
-            <div className="card-body text-rubik fw-bold py-2 bg-black">
-              <p className="card-title mb-0 city bg-black">your heart</p>
-              <p className="card-title mb-0 bg-black">
-                <span className="temp bg-black">37&deg; C</span>&nbsp;
-                <span className="fw-light">
+            <div className="card-body text-rubik fw-bold py-2 ">
+              <p className="card-title mb-0 city">your heart</p>
+              <p className="card-title mb-0">
+                <span className="temp">37&deg; C</span>&nbsp;
+                <span className="fw-light text-dm">
                   &#40;
-                  <span className="desc text-lowercase bg-black">love</span>
+                  <span className="desc text-lowercase">love</span>
                   &#41;
                 </span>
               </p>
             </div>
           </div>
-          <div className="col-4 d-flex align-items-center justify-content-between bg-black px-0">
-            <div className="card-body text-rubik bg-black">
-              <p className="card-title h5 text-end bg-black">
-                <i className="fa-solid fa-location-dot text-danger grow pin bg-black"></i>
+          <div className="col-4 px-0">
+            <div className="card-body text-rubik">
+              <p className="card-title h5 text-end">
+                <i className="fa-solid fa-location-dot text-danger grow pin"></i>
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@ import Loading from "./Loading";
 import Error from "./Error";
 
 export default function Notes() {
-  const { isLoading, isError, data, error } = useQuery("cheatsheet", getUsers);
+  const { isLoading, isError, data } = useQuery("cheatsheet", getUsers);
   if (isLoading)
     return (
       <div className="container fs-6 text-rubik">
@@ -17,10 +17,7 @@ export default function Notes() {
 
   return (
     <>
-      <div className="container text-rubik my-5">
-        <p className="fw-bold text-center my-5">
-          note junk<i class="fa-solid fa-arrow-down ms-2 grow"></i>
-        </p>
+      <div className="container text-rubik my-4 px-0">
         <div className="row">
           {data.reverse().map((obj, i) => (
             <Note {...obj} key={i} />
@@ -32,11 +29,14 @@ export default function Notes() {
 }
 function Note({ firstname, lastname }) {
   return (
-    <div className="col-md-3">
-      <div className="card mt-3 shadow-sm border-0">
-        <div className="card-body bg-dark">
-          <p className="card-title mb-2 bg-dark">{firstname || "title"}</p>
-          <p className="card-subtitle mb-2 bg-dark">{lastname || "content"}</p>
+    <div className="col-md-4">
+      <div
+        className="card mt-3 shadow-sm border-3 grow"
+        style={{ borderRadius: "9px" }}
+      >
+        <div className="card-body">
+          <p className="card-title mb-2 fw-bold">{firstname || "title"}</p>
+          <p className="card-subtitle mb-2">{lastname || "content"}</p>
         </div>
       </div>
     </div>

@@ -35,36 +35,36 @@ export default function Form() {
     <>
       <div className="col-md-10 text-rubik">
         <form onSubmit={handleSubmit}>
-          <div className="card text-dm border-dark">
-            <div className="card-body">
+          <div className="card text-dm border-0">
+            <div className="card-body p-0">
               <p className="card-text">
                 <textarea
                   name="firstname"
                   type="text"
-                  className="form-control bg-dark border-0 text-light mb-2"
+                  className="form-control mb-2 border border-2"
                   placeholder="title"
                   onChange={setFormData}
                   autoComplete="off"
-                  style={{ resize: "none" }}
+                  style={{ resize: "none", borderRadius: "9px" }}
                 />
                 <textarea
                   name="lastname"
                   type="text"
-                  className="form-control bg-dark border-0 text-light g-3"
+                  className="form-control g-3 border border-2"
                   placeholder="what's on your mind?"
                   onChange={setFormData}
                   autoComplete="off"
                   rows="4"
-                  style={{ resize: "none" }}
+                  style={{ resize: "none", borderRadius: "9px" }}
                 />
               </p>
               <button
                 type="button"
-                className="btn btn-sm bg-black text-light rounded-pill mb-1 text-muted"
+                className="btn btn-sm rounded-pill mb-1 border border-2 grow"
                 onClick={handleSubmit}
               >
                 create
-                <i class="fa-regular fa-paper-plane ms-2 grow text-muted bg-black"></i>
+                <i class="fa-regular fa-paper-plane ms-2"></i>
               </button>
             </div>
           </div>
