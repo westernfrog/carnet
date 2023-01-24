@@ -1,11 +1,10 @@
-
 <h1 align="center">
   📝 Carnet
 </h1>
 
-<h4 align="center">
-A CRUD application where you can see the divine meeting of front-end with back-end ✨. This project stores the data in the `MongoDB database` and by using `Fetch api` the same data is displayed on the webpage.
-</h4>
+
+### A CRUD application where you can see the divine meeting of front-end with back-end ✨. This project stores the data in the `MongoDB database` and by using `Fetch api` the same data is displayed on the webpage.
+
 
 <p align="center">
     <a href="https://carnet69.vercel.app/" target="blank">View Demo</a>
