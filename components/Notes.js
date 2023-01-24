@@ -35,7 +35,9 @@ function Note({ firstname, lastname }) {
         style={{ borderRadius: "9px" }}
       >
         <div className="card-body">
-          <p className="card-title mb-2 fw-bold">{firstname || "title"}</p>
+          <p className="card-title mb-2 fw-bold">
+            {firstname || "a better title"}
+          </p>
           <p className="card-subtitle mb-2">{lastname || "content"}</p>
         </div>
       </div>

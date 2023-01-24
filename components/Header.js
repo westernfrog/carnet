@@ -6,8 +6,8 @@ export default function Header() {
       <div className="container my-5 text-dm">
         <div className="row">
           <div className="col-md-1"></div>
-          <div className="col-md-11">
-            <ul className="nav">
+          <div className="col-md-11 mb-5">
+            <ul className="nav position-fixed">
               <li className="nav-item me-lg-5">
                 <Link className="nav-link link-dark ps-0 " href="/">
                   carnet
