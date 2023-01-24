@@ -10,7 +10,11 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>carnet</title>
-        <meta name="description" content="made with ❤️ by aman singh" />
+        <meta
+          name="description"
+          content="A CRUD app made from Next js and MongoDB database. It's a project which stores 
+          the data in the MongoDB database and by using fetch api the same data is displayed on the webpage."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
