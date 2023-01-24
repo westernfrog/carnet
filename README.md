@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  Carnet
+  📝 Carnet
 </h1>
 
 <p align="center">
@@ -18,10 +18,10 @@ Loved the tool? Please consider donating</a> 💸 to help it improve!
 <p align="center">
 <a href="https://www.buymeacoffee.com/rahuldkjain" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:1px" />
 </p>
-
-#### A CRUD application where you can see the divine meeting of front-end with back-end ✨. 
-
-This project stores the data in the `MongoDB database` and by using `Fetch api` the same data is displayed on the webpage.
+  
+<h4 align="center">
+A CRUD application where you can see the divine meeting of front-end with back-end ✨. This project stores the data in the `MongoDB database` and by using `Fetch api` the same data is displayed on the webpage.
+</h4>
 
 ## 🛠️ Installation Steps
 
@@ -49,13 +49,11 @@ npm install
 npm run dev
 ```
 
-🌟 You are all set!
-
 ## 💻 Built with
 
-- [Next.js](https://www.gatsbyjs.com/)
-- [MongoDB](https://greensock.com/gsap/): for database
-- [Bootstrap](https://tailwindcss.com/): for styling
+- [Next.js](https://nextjs.org/)
+- [MongoDB](https://mongodb.com/): for database
+- [Bootstrap](https://getbootstrap.com/): for styling
 
 <hr>
 <p align="center">
