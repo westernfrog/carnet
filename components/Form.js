@@ -64,7 +64,7 @@ export default function Form() {
                 onClick={handleSubmit}
               >
                 create
-                <i class="fa-regular fa-paper-plane ms-2"></i>
+                <i className="fa-regular fa-paper-plane ms-2"></i>
               </button>
             </div>
           </div>
