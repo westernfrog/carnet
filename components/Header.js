@@ -11,7 +11,7 @@ export default function Header() {
               <li className="nav-item me-lg-5">
                 <Link
                   className="nav-link link-dark ps-0 link"
-                  href="https://carnet69.vercel.app/"
+                  href="https://github.com/westernfrog/carnet"
                 >
                   carnet
                 </Link>
