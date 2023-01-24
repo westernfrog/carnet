@@ -9,10 +9,7 @@ export default function Header() {
           <div className="col-md-11">
             <ul className="nav">
               <li className="nav-item me-lg-5">
-                <Link
-                  className="nav-link link-dark ps-0 link"
-                  href="https://github.com/westernfrog/carnet"
-                >
+                <Link className="nav-link link-dark ps-0 link" href="/">
                   carnet
                 </Link>
               </li>
