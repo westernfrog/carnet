@@ -9,9 +9,9 @@ export default function Header() {
           <div className="col-md-11">
             <ul className="nav">
               <li className="nav-item me-lg-5">
-                <Link className="nav-link link-dark ps-0 link" href="/">
+                <a className="nav-link link-dark ps-0 link" href="/">
                   carnet
-                </Link>
+                </a>
               </li>
               <li className="nav-item mx-4">
                 <Link className="nav-link link-dark link" href="/">
