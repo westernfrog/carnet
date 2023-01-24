@@ -45,7 +45,7 @@ export default function Form() {
                 <textarea
                   name="firstname"
                   type="text"
-                  className="form-control mb-2 border border-2"
+                  className="form-control mb-2 border border-2 shadow-sm"
                   placeholder="title"
                   onChange={setFormData}
                   autoComplete="off"
@@ -55,7 +55,7 @@ export default function Form() {
                 <textarea
                   name="lastname"
                   type="text"
-                  className="form-control g-3 border border-2 content"
+                  className="form-control g-3 border border-2 content shadow-sm"
                   placeholder="what's on your mind?"
                   onChange={setFormData}
                   autoComplete="off"
@@ -69,7 +69,7 @@ export default function Form() {
               </p>
               <button
                 type="button"
-                className="btn btn-sm rounded-pill mb-1 border border-2 grow"
+                className="btn btn-sm rounded-pill mb-1 border border-4 shadow-sm grow"
                 onClick={handleSubmit}
               >
                 create
