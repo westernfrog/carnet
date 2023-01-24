@@ -60,7 +60,10 @@ export default function Form() {
                   onChange={setFormData}
                   autoComplete="off"
                   rows="4"
-                  style={{ resize: "none", borderRadius: "9px" }}
+                  style={{
+                    resize: "none",
+                    borderRadius: "9px",
+                  }}
                   required
                 />
               </p>
