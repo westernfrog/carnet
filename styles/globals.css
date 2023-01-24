@@ -19,6 +19,13 @@
 .grow {
   transition: transform 300ms ease-in-out;
 }
+.link:hover {
+  transform: scale(1.2);
+  transition: transform 200ms ease-in-out;
+}
+.link {
+  transition: transform 200ms ease-in-out;
+}
 .bg-dark {
   background-color: #111 !important;
 }

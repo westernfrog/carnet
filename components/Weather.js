@@ -62,9 +62,9 @@ export default function Wea() {
             </div>
           </div>
           <div className="col-4 px-0">
-            <div className="card-body text-rubik">
+            <div className="card-body text-rubik pin grow">
               <p className="card-title h5 text-end">
-                <i className="fa-solid fa-location-dot text-danger grow pin"></i>
+                <i className="fa-solid fa-location-dot text-danger"></i>
               </p>
             </div>
           </div>
