@@ -1,4 +1,3 @@
-import $ from "jquery";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import Weather from "../components/Weather";
@@ -13,7 +12,7 @@ export default function Home() {
       const newtime = new Date().toLocaleTimeString();
       settime(newtime);
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTime, 100);
 
     const defaultApi =
       "https://api.openweathermap.org/data/2.5/weather?&q=Chandigarh&units=metric&appid=ba0220ef81b4582a85ac35da7e89913c";
@@ -80,7 +79,7 @@ export default function Home() {
                 <p>
                   <i className="fa-regular fa-clock me-2"></i>
                   <span>{date}</span>
-                  <span className="mx-2">•</span>
+                  <span className="mx-2 fw-bold">•</span>
                   <span>{time}</span>
                 </p>
                 <p>
