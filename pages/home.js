@@ -27,6 +27,7 @@ export default function Home() {
       setcity(DataWeather.name);
       settemp(Math.floor(DataWeather.main.temp));
       setdesc(DataWeather.weather[0].main);
+      setcountry(DataWeather.sys.country);
     }
   }, []);
 
@@ -34,6 +35,7 @@ export default function Home() {
   const [time, settime] = useState("");
 
   const [city, setcity] = useState("");
+  const [country, setcountry] = useState("");
   const [temp, settemp] = useState("");
   const [desc, setdesc] = useState("");
 
@@ -84,17 +86,22 @@ export default function Home() {
                 </p>
                 <p>
                   <i className="fa-solid fa-cloud-sun me-2"></i>
-                  <span>It&apos;s currently&nbsp;</span>
-                  <span className="fw-bold">
-                    <span className="me-2">{temp} &deg;C</span>
+                  <span>It&apos;s currently</span>
+                  <span className="fw-bold ms-2">
+                    <span>{temp} &deg;C</span>
                   </span>
-                  <span>
+                  <i class="fa-solid fa-temperature-three-quarters mx-2"></i>
+                  <span className="me-2">
                     &#40;
                     <span className="text-lowercase text-rubik">{desc}</span>
                     &#41;
                   </span>
+                  in
                   <span className="fw-bold ms-2">
-                    in <span>{city}</span>.
+                    <span>
+                      {city}, {country}
+                    </span>
+                    .
                   </span>
                 </p>
               </div>

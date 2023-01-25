@@ -56,10 +56,12 @@ export default function Wea() {
           <div className="col-8 text-start px-0">
             <div className="card-body text-rubik fw-bold py-2">
               <p className="card-title mb-0">
-                {city || "Your Heart ♡"} {country || " "}
+                <i class="fa-solid fa-earth-americas me-2"></i>
+                {city || "Your Heart"} {country || " "}
               </p>
               <p className="card-title mb-0">
                 <span>{temp || "37"} &deg;C </span>
+                <i class="fa-solid fa-temperature-three-quarters mx-2"></i>
                 <span className="fw-light text-dm">
                   &#40;
                   <span className="text-lowercase">{desc || "love"}</span>
