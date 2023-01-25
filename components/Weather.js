@@ -61,7 +61,6 @@ export default function Wea() {
               </p>
               <p className="card-title mb-0">
                 <span>{temp || "37"} &deg;C </span>
-                <i class="fa-solid fa-temperature-three-quarters mx-2"></i>
                 <span className="fw-light text-dm">
                   &#40;
                   <span className="text-lowercase">{desc || "love"}</span>

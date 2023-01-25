@@ -80,28 +80,23 @@ export default function Home() {
               <div className="text-dm">
                 <p>
                   <i className="fa-regular fa-clock me-2"></i>
-                  <span>{date}</span>
+                  {date}
                   <span className="mx-2 fw-bold">•</span>
-                  <span>{time}</span>
+                  {time}
                 </p>
                 <p>
-                  <i className="fa-solid fa-cloud-sun me-2"></i>
-                  <span>It&apos;s currently</span>
-                  <span className="fw-bold ms-2">
-                    <span>{temp} &deg;C</span>
+                  <i class="fa-solid fa-cloud-sun me-2"></i>
+                  It&apos;s currently&nbsp;
+                  <span className="fw-bold">
+                    {temp} &deg;C
+                    <i class="fa-solid fa-temperature-three-quarters mx-2"></i>
                   </span>
-                  <i class="fa-solid fa-temperature-three-quarters mx-2"></i>
-                  <span className="me-2">
-                    &#40;
-                    <span className="text-lowercase text-rubik">{desc}</span>
-                    &#41;
-                  </span>
-                  in
-                  <span className="fw-bold ms-2">
-                    <span>
-                      {city}, {country}
-                    </span>
-                    .
+                  &#40;
+                  <span className="text-lowercase text-rubik">{desc}</span>
+                  &#41; in
+                  <span className="fw-bold">
+                    {" "}
+                    {city}, {country}.
                   </span>
                 </p>
               </div>
