@@ -15,7 +15,7 @@ export default function Chat() {
                 chat&nbsp;&nbsp;
                 <i className="fa-solid fa-comment-dots grow"></i>
               </h1>
-              <p className="text-dark text-rubik mb-0">
+              <p className="text-secondary text-rubik mb-0">
                 the data from the input field goes directly to{" "}
                 <span className="fw-bold text-dark">MongoDB database</span> and
                 that data is display in a form of note.
