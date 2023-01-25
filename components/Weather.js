@@ -47,7 +47,7 @@ export default function Wea() {
   return (
     <>
       <div
-        className="card text-light mt-4 border border-2"
+        className="card text-light mt-4 border border-2 pin"
         style={{ borderRadius: "9px" }}
       >
         <div className="row mx-0 px-0">
@@ -65,9 +65,9 @@ export default function Wea() {
             </div>
           </div>
           <div className="col-4 px-0">
-            <div className="card-body text-rubik pin grow">
+            <div className="card-body text-rubik grow">
               <p className="card-title h5 text-end">
-                <i className="fa-solid fa-location-dot fa-lg text-danger pin"></i>
+                <i className="fa-solid fa-location-dot fa-lg text-danger"></i>
               </p>
             </div>
           </div>
