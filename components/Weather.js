@@ -53,7 +53,7 @@ export default function Wea() {
         <div className="row mx-0 px-0">
           <div className="col-8 text-start px-0">
             <div className="card-body text-rubik fw-bold py-2 ">
-              <p className="card-title mb-0">{city || "Your Heart ♥️"}</p>
+              <p className="card-title mb-0">{city || "Your Heart ♡"}</p>
               <p className="card-title mb-0">
                 <span>{temp || "37"} &deg;C </span>
                 <span className="fw-light text-dm">
