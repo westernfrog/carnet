@@ -1,15 +1,20 @@
 import $ from "jquery";
 import Header from "../components/Header";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Weather from "../components/Weather";
 import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
-    const date = new Date();
-    const time = new Date().getTime();
-    $(".getDate").html(date.toString().slice(0, 15));
-    $(".getTime").html(time.toString());
+    const newdate = new Date().toString().slice(0, 15);
+    setdate(newdate);
+
+    function updateTime() {
+      const newtime = new Date().toLocaleTimeString();
+      settime(newtime);
+    }
+    setInterval(updateTime, 1000);
+
     const defaultApi =
       "https://api.openweathermap.org/data/2.5/weather?&q=Chandigarh&units=metric&appid=ba0220ef81b4582a85ac35da7e89913c";
     apiJson(defaultApi);
@@ -20,11 +25,18 @@ export default function Home() {
       showDefault(apiData);
     }
     function showDefault(DataWeather) {
-      $(".dcity").html(" " + DataWeather.name);
-      $(".dtemp").html(Math.floor(DataWeather.main.temp) + "&deg; C");
-      $(".ddesc").html(DataWeather.weather[0].main);
+      setcity(DataWeather.name);
+      settemp(Math.floor(DataWeather.main.temp));
+      setdesc(DataWeather.weather[0].main);
     }
   }, []);
+
+  const [date, setdate] = useState("");
+  const [time, settime] = useState("");
+
+  const [city, setcity] = useState("");
+  const [temp, settemp] = useState("");
+  const [desc, setdesc] = useState("");
 
   return (
     <>
@@ -66,25 +78,24 @@ export default function Home() {
               </div>
               <div className="text-dm">
                 <p>
-                  <i className="fa-regular fa-clock"></i>&nbsp;&nbsp;
-                  <span className="getDate"></span>
-                  &nbsp;&nbsp;•&nbsp;&nbsp;
-                  <span className="getTime"></span>
+                  <i className="fa-regular fa-clock me-2"></i>
+                  <span>{date}</span>
+                  <span className="mx-2">•</span>
+                  <span>{time}</span>
                 </p>
                 <p>
-                  <i className="fa-solid fa-cloud-moon"></i>&nbsp;&nbsp;
+                  <i className="fa-solid fa-cloud-moon me-2"></i>
                   <span>It&apos;s currently&nbsp;</span>
                   <span className="fw-bold">
-                    &nbsp;
-                    <span className="dtemp"></span>&nbsp;&nbsp;
+                    <span className="me-2">{temp} &deg;C</span>
                   </span>
                   <span>
                     &#40;
-                    <span className="ddesc text-lowercase text-rubik"></span>
-                    &#41;&nbsp;
+                    <span className="text-lowercase text-rubik">{desc}</span>
+                    &#41;
                   </span>
-                  <span className="fw-bold">
-                    &nbsp;in <span className="dcity"></span>.
+                  <span className="fw-bold ms-2">
+                    in <span>{city}</span>.
                   </span>
                 </p>
               </div>
