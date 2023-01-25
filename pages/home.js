@@ -83,7 +83,7 @@ export default function Home() {
                   <span>{time}</span>
                 </p>
                 <p>
-                  <i className="fa-solid fa-cloud-moon me-2"></i>
+                  <i class="fa-solid fa-cloud-sun me-2"></i>
                   <span>It&apos;s currently&nbsp;</span>
                   <span className="fw-bold">
                     <span className="me-2">{temp} &deg;C</span>

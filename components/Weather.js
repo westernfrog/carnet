@@ -37,10 +37,12 @@ export default function Wea() {
       setcity(DataWeather.name);
       settemp(Math.floor(DataWeather.main.temp));
       setdesc(DataWeather.weather[0].main);
+      setcountry(DataWeather.sys.country);
     }
   }, []);
 
   const [city, setcity] = useState("");
+  const [country, setcountry] = useState("");
   const [temp, settemp] = useState("");
   const [desc, setdesc] = useState("");
 
@@ -52,8 +54,10 @@ export default function Wea() {
       >
         <div className="row mx-0 px-0">
           <div className="col-8 text-start px-0">
-            <div className="card-body text-rubik fw-bold py-2 ">
-              <p className="card-title mb-0">{city || "Your Heart ♡"}</p>
+            <div className="card-body text-rubik fw-bold py-2">
+              <p className="card-title mb-0">
+                {city || "Your Heart ♡"} {country || " "}
+              </p>
               <p className="card-title mb-0">
                 <span>{temp || "37"} &deg;C </span>
                 <span className="fw-light text-dm">
@@ -66,8 +70,8 @@ export default function Wea() {
           </div>
           <div className="col-4 px-0">
             <div className="card-body text-rubik grow">
-              <p className="card-title h5 text-end">
-                <i className="fa-solid fa-location-dot fa-lg text-danger"></i>
+              <p className="card-title text-end">
+                <i className="fa-solid fa-location-dot fa-xl text-danger"></i>
               </p>
             </div>
           </div>
