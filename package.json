@@ -1,5 +1,5 @@
 {
-  "name": "carnet",
+  "name": "carnet69",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.0",
-    "eslint": "8.30.0",
-    "eslint-config-next": "13.1.0",
-    "jquery": "^3.6.3",
-    "mongodb": "^4.13.0",
-    "mongoose": "^6.8.1",
-    "next": "13.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.7.1",
-    "react-query": "^3.39.2"
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@tailwindcss/forms": "^0.5.6",
+    "mongoose": "^7.5.3",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-query": "^3.39.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
   }
 }
