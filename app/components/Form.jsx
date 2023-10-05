@@ -35,6 +35,7 @@ export default function Form() {
   const { data: posts } = useQuery("posts", fetchPosts);
   const mutation = useMutation(postData, {
     onSuccess: () => {
+      // Invalidate the "posts" query to trigger a re-fetch
       queryClient.invalidateQueries("posts");
       setFormData("");
     },
