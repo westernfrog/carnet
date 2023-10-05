@@ -33,6 +33,7 @@ export default function Form() {
   const [error, setError] = useState("");
   const queryClient = useQueryClient();
 
+  const { data: posts } = useQuery("posts", fetchPosts);
   const mutation = useMutation(postData, {
     onSuccess: () => {
       queryClient.invalidateQueries("posts");
