@@ -5,8 +5,8 @@ import { NextResponse } from "next/server";
 export async function GET() {
   await connectToDatabase();
   try {
-    const data = await Data.find({}).sort("-createdAt");
-    return NextResponse.json({ message: data }, { status: 201 });
+    const data = await Data.find().sort("-createdAt");
+    return NextResponse.json({ message: data });
   } catch (error) {
     return NextResponse.json(
       { message: "Internal server error" },
