@@ -67,7 +67,6 @@ export default function Form() {
               placeholder="write anything.."
               className="w-full bg-transparent border-0 rounded-xl text-sm focus:ring-0 placeholder:text-[#374151]"
             />
-
             <button
               type="submit"
               onClick={handleSubmit}
