@@ -70,7 +70,7 @@ export default function Form() {
             onChange={(e) => setFormData(e.target.value)}
             rows={3}
             style={{ resize: "none" }}
-            placeholder="Write anything.."
+            placeholder="write anything.."
             className="w-full bg-transparent border-0 rounded-xl text-sm focus:ring-0 placeholder:text-[#374151]"
           />
           <button
