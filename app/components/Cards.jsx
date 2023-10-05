@@ -4,7 +4,7 @@ import Card from "./Card";
 import { useQuery } from "react-query";
 
 async function fetchPosts() {
-  const formRes = await fetch("/api/getData", { cache: "no-store" });
+  const formRes = await fetch("/api/getData");
   const formData = await formRes.json();
 
   return formData.message;

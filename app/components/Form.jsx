@@ -21,7 +21,7 @@ async function postData(formData) {
 }
 
 async function fetchPosts() {
-  const formRes = await fetch("/api/getData", { cache: "no-store" });
+  const formRes = await fetch("/api/getData");
   const formData = await formRes.json();
 
   return formData.message;
