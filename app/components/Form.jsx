@@ -76,13 +76,13 @@ export default function Form() {
           <button
             type="submit"
             onClick={handleSubmit}
-            className="w-12 h-10 bg-emerald-100 ring-1 ring-black/30 shadow-xl flex items-center justify-center rounded-xl m-3"
+            className="w-12 h-10 bg-emerald-100 ring-1 ring-neutral-400 shadow-xl flex items-center justify-center rounded-xl m-3"
             disabled={loading}
           >
             {loading ? (
               <EllipsisHorizontalIcon className="w-5 h-5 animate-pulse" />
             ) : (
-              <PaperAirplaneIcon className="w-5 h-5" />
+              <PaperAirplaneIcon className="w-5 h-5 stroke-neutral-700" />
             )}
           </button>
         </form>

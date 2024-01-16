@@ -55,7 +55,9 @@ export default function Card(props) {
         }`}
         onClick={clipboard}
       >
-        <pre className={"whitespace-pre-line pb-5 " + inter.className}>
+        <pre
+          className={"whitespace-pre-line pb-5 break-words " + inter.className}
+        >
           {props.desc}
         </pre>
         <p className="text-xs absolute bottom-0 my-2">{createdAt}</p>
